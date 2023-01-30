@@ -75,15 +75,15 @@ function updateAdjustment()
 
   if(offer1Total > offer2Total)
   {
-    resultDisplay.innerHTML = "Team 1's offer is better " + offer1Total + " vs " + offer2Total;
+    resultDisplay.innerHTML = "Team 1's offer is better: " + offer1Total + " vs " + offer2Total;
   }
   else if(offer2Total > offer1Total)
   {
-    resultDisplay.innerHTML = "Team 2's offer is better " + offer1Total + " vs " + offer2Total;
+    resultDisplay.innerHTML = "Team 2's offer is better: " + offer1Total + " vs " + offer2Total;
   }
   else
   {
-    resultDisplay.innerHTML = "Even Trade"
+    resultDisplay.innerHTML = "The trade is even: " + offer1Total + " vs " offer2Total;
   }
 }
 
