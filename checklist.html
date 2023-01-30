@@ -1,0 +1,285 @@
+<head>
+  <link rel="stylesheet" href="checklistStyle.css">
+</head>
+
+<body>
+  <h1>Trade Calculator</h1>
+  <!-- Team 1 Input -->
+  <div>
+    <h2>Team 1</h2>
+    <form>
+      <input type="text" id="Team_1_Input" list="Players">
+    </form>
+    <ul id="Team_1_List">
+    </ul>
+    <p id="team1Arr"></p>
+  </div>
+  <!-- team 2 input -->
+  <div>
+    <h2>Team 2</h2>
+    <form>
+      <input type="text" id="Team_2_Input" list="Players">
+    </form>
+    <ul id="Team_2_List">
+    </ul>
+    <p id="team2Arr"></p>
+  </div>
+  <!-- results -->
+  <div>
+    <p id="AdjResult"></p>
+    <p id="OfferResult"></p>
+  </div>
+  <!-- suggestions -->
+  <div>
+  </div>
+
+
+  <script src="checklistCode.js"></script>
+
+  <datalist id="Players">
+    <option value="Josh Allen"></option>
+    <option value="Patrick Mahomes"></option>
+    <option value="Jalen Hurts"></option>
+    <option value="Justin Jefferson"></option>
+    <option value="Justin Herbert"></option>
+    <option value="Ja'Marr Chase"></option>
+    <option value="Joe Burrow"></option>
+    <option value="Jonathan Taylor"></option>
+    <option value="Lamar Jackson"></option>
+    <option value="Christian McCaffrey"></option>
+    <option value="CeeDee Lamb"></option>
+    <option value="Breece Hall"></option>
+    <option value="A.J. Brown"></option>
+    <option value="Trevor Lawrence"></option>
+    <option value="Kenneth Walker III"></option>
+    <option value="Justin Fields"></option>
+    <option value="Saquon Barkley"></option>
+    <option value="Jaylen Waddle"></option>
+    <option value="Deshaun Watson"></option>
+    <option value="Austin Ekeler"></option>
+    <option value="Tee Higgins"></option>
+    <option value="Kyle Pitts"></option>
+    <option value="Amon-Ra St. Brown"></option>
+    <option value="2023 Early 1st"></option>
+    <option value="Stefon Diggs"></option>
+    <option value="Kyler Murray"></option>
+    <option value="Travis Etienne Jr."></option>
+    <option value="Tyreek Hill"></option>
+    <option value="Mark Andrews"></option>
+    <option value="Dak Prescott"></option>
+    <option value="DK Metcalf"></option>
+    <option value="Garrett Wilson"></option>
+    <option value="Tua Tagovailoa"></option>
+    <option value="Javonte Williams"></option>
+    <option value="Davante Adams"></option>
+    <option value="Travis Kelce"></option>
+    <option value="D'Andre Swift"></option>
+    <option value="Josh Jacobs"></option>
+    <option value="Joe Mixon"></option>
+    <option value="Cooper Kupp"></option>
+    <option value="Nick Chubb"></option>
+    <option value="Drake London"></option>
+    <option value="Rhamondre Stevenson"></option>
+    <option value="Chris Olave"></option>
+    <option value="Chris Godwin"></option>
+    <option value="2023 Mid 1st"></option>
+    <option value="Trey Lance"></option>
+    <option value="Najee Harris"></option>
+    <option value="DeVonta Smith"></option>
+    <option value="Kirk Cousins"></option>
+    <option value="2024 Early 1st"></option>
+    <option value="Derrick Henry"></option>
+    <option value="Deebo Samuel"></option>
+    <option value="Dalvin Cook"></option>
+    <option value="Michael Pittman Jr."></option>
+    <option value="Tony Pollard"></option>
+    <option value="DJ Moore"></option>
+    <option value="Daniel Jones"></option>
+    <option value="J.K. Dobbins"></option>
+    <option value="Treylon Burks"></option>
+    <option value="Marquise Brown"></option>
+    <option value="Alvin Kamara"></option>
+    <option value="Terry McLaurin"></option>
+    <option value="George Kittle"></option>
+    <option value="Derek Carr"></option>
+    <option value="Dameon Pierce"></option>
+    <option value="Christian Watson"></option>
+    <option value="2023 Late 1st"></option>
+    <option value="2024 Mid 1st"></option>
+    <option value="Aaron Jones"></option>
+    <option value="Jameson Williams"></option>
+    <option value="Jerry Jeudy"></option>
+    <option value="T.J. Hockenson"></option>
+    <option value="Russell Wilson"></option>
+    <option value="George Pickens"></option>
+    <option value="Miles Sanders"></option>
+    <option value="Diontae Johnson"></option>
+    <option value="Brandon Aiyuk"></option>
+    <option value="Aaron Rodgers"></option>
+    <option value="Rashod Bateman"></option>
+    <option value="Dallas Goedert"></option>
+    <option value="Geno Smith"></option>
+    <option value="2024 Late 1st"></option>
+    <option value="Kenny Pickett"></option>
+    <option value="AJ Dillon"></option>
+    <option value="Jared Goff"></option>
+    <option value="2023 Early 2nd"></option>
+    <option value="Mike Williams"></option>
+    <option value="Matthew Stafford"></option>
+    <option value="Mike Evans"></option>
+    <option value="Rachaad White"></option>
+    <option value="DeAndre Hopkins"></option>
+    <option value="David Montgomery"></option>
+    <option value="Amari Cooper"></option>
+    <option value="Pat Freiermuth"></option>
+    <option value="Cam Akers"></option>
+    <option value="Jahan Dotson"></option>
+    <option value="Mac Jones"></option>
+    <option value="2024 Early 2nd"></option>
+    <option value="Brian Robinson Jr."></option>
+    <option value="Christian Kirk"></option>
+    <option value="James Conner"></option>
+    <option value="2023 Mid 2nd"></option>
+    <option value="James Cook"></option>
+    <option value="Leonard Fournette"></option>
+    <option value="Calvin Ridley"></option>
+    <option value="David Njoku"></option>
+    <option value="Ezekiel Elliott"></option>
+    <option value="Keenan Allen"></option>
+    <option value="Gabe Davis"></option>
+    <option value="JuJu Smith-Schuster"></option>
+    <option value="Antonio Gibson"></option>
+    <option value="Courtland Sutton"></option>
+    <option value="Ryan Tannehill"></option>
+    <option value="2024 Mid 2nd"></option>
+    <option value="Khalil Herbert"></option>
+    <option value="Elijah Moore"></option>
+    <option value="Greg Dulcich"></option>
+    <option value="Tom Brady"></option>
+    <option value="Darren Waller"></option>
+    <option value="Tyler Lockett"></option>
+    <option value="Dalton Schultz"></option>
+    <option value="Isiah Pacheco"></option>
+    <option value="Darnell Mooney"></option>
+    <option value="Jimmy Garoppolo"></option>
+    <option value="Devin Singletary"></option>
+    <option value="Jakobi Meyers"></option>
+    <option value="2023 Late 2nd"></option>
+    <option value="Tyler Allgeier"></option>
+    <option value="Kadarius Toney"></option>
+    <option value="Kareem Hunt"></option>
+    <option value="Wan'Dale Robinson"></option>
+    <option value="Zach Wilson"></option>
+    <option value="Elijah Mitchell"></option>
+    <option value="Rondale Moore"></option>
+    <option value="Cole Kmet"></option>
+    <option value="Michael Carter"></option>
+    <option value="Skyy Moore"></option>
+    <option value="Trey McBride"></option>
+    <option value="Jamaal Williams"></option>
+    <option value="Chase Claypool"></option>
+    <option value="Damien Harris"></option>
+    <option value="Brandin Cooks"></option>
+    <option value="Jameis Winston"></option>
+    <option value="Clyde Edwards-Helaire"></option>
+    <option value="Dawson Knox"></option>
+    <option value="Desmond Ridder"></option>
+    <option value="Alexander Mattison"></option>
+    <option value="Alec Pierce"></option>
+    <option value="Evan Engram"></option>
+    <option value="Carson Wentz"></option>
+    <option value="Cordarrelle Patterson"></option>
+    <option value="Romeo Doubs"></option>
+    <option value="Noah Fant"></option>
+    <option value="Baker Mayfield"></option>
+    <option value="Kenneth Gainwell"></option>
+    <option value="Curtis Samuel"></option>
+    <option value="Michael Gallup"></option>
+    <option value="Michael Thomas"></option>
+    <option value="D'Onta Foreman"></option>
+    <option value="Tyler Boyd"></option>
+    <option value="Gerald Everett"></option>
+    <option value="Jeff Wilson Jr."></option>
+    <option value="Donovan Peoples-Jones"></option>
+    <option value="Joshua Palmer"></option>
+    <option value="2023 Early 3rd"></option>
+    <option value="Jordan Love"></option>
+    <option value="Nico Collins"></option>
+    <option value="Allen Lazard"></option>
+    <option value="Zamir White"></option>
+    <option value="Isaiah Likely"></option>
+    <option value="Jerick McKinnon"></option>
+    <option value="Hunter Renfrow"></option>
+    <option value="Tyler Higbee"></option>
+    <option value="Rashaad Penny"></option>
+    <option value="Malik Willis"></option>
+    <option value="Jaylen Warren"></option>
+    <option value="Gus Edwards"></option>
+    <option value="Adam Theilen"></option>
+    <option value="Jelani Woods"></option>
+    <option value="Daniel Bellinger"></option>
+    <option value="Raheem Mostert"></option>
+    <option value="Zach Ertz"></option>
+    <option value="2024 Early 3rd"></option>
+    <option value="Chuba Hubbard"></option>
+    <option value="DJ Chark Jr."></option>
+    <option value="Chigoziem Okonkwo"></option>
+    <option value="David Bell"></option>
+    <option value="2023 Mid 3rd"></option>
+    <option value="Isaiah Spiller"></option>
+    <option value="Allen Robinson II"></option>
+    <option value="Mike Gesicki"></option>
+    <option value="Nyheim Hines"></option>
+    <option value="Kyren Williams"></option>
+    <option value="Tyquan Thornton"></option>
+    <option value="Zonovan Knight"></option>
+    <option value="Pierre Strong Jr."></option>
+    <option value="Khalil Shakir"></option>
+    <option value="Marcus Mariota"></option>
+    <option value="2024 Mid 3rd"></option>
+    <option value="Chase Edmonds"></option>
+    <option value="James Robinson"></option>
+    <option value="Corey Davis"></option>
+    <option value="Parris Campbell"></option>
+    <option value="Sam Darnold"></option>
+    <option value="2023 Late 3rd"></option>
+    <option value="Russell Gage"></option>
+    <option value="Terrace Marshall Jr."></option>
+    <option value="John Metchie III"></option>
+    <option value="Cade Otton"></option>
+    <option value="Zay Jones"></option>
+    <option value="Marquez Valdes-Scantling"></option>
+    <option value="Tyrion Davis-Price"></option>
+    <option value="K.J. Osborn"></option>
+    <option value="Odell Beckham Jr."></option>
+    <option value="Darrell Henderson Jr."></option>
+    <option value="Robert Woods"></option>
+    <option value="KJ Hamler"></option>
+    <option value="Hunter Henry"></option>
+    <option value="2024 Late 3rd"></option>
+    <option value="Isaiah McKenzie"></option>
+    <option value="Davis Mills"></option>
+    <option value="Hassan Haskins"></option>
+    <option value="Mecole Hardman"></option>
+    <option value="Irv Smith Jr."></option>
+    <option value="Melvin Gordon III"></option>
+    <option value="Van Jefferson"></option>
+    <option value="J.D. McKissic"></option>
+    <option value="Jalen Tolbert"></option>
+    <option value="Hayden Hurst"></option>
+    <option value="D'Ernest Johnson"></option>
+    <option value="DeVante Parker"></option>
+    <option value="Deon Jackson"></option>
+    <option value="Jarvis Landry"></option>
+    <option value="Brock Purdy"></option>
+    <option value="Kenyan Drake"></option>
+    <option value="Laviska Shenault Jr."></option>
+    <option value="Keaontay Ingram"></option>
+    <option value="Darius Slayton"></option>
+    <option value="Matt Ryan"></option>
+    <option value="Zach Moss"></option>
+    <option value="Velus Jones Jr."></option>
+    <option value="Logan Thomas"></option>
+    <option value="Jerome Ford"></option>
+  </datalist>
+</body>
